@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    username: root
+    password: "0403"
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+server:
+  port: 8082
+  ssl:
+    key-store: D:\tomcat.keystore
+    key-password: lizhipeng
+    key-store-type: JKS
+    key-alias: tomcat
