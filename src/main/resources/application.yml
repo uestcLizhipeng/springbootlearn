@@ -5,6 +5,17 @@ spring:
     password: "0403"
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test
+  redis:
+    database: 0
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000000ms
 server:
   port: 8082
   ssl:
@@ -12,3 +23,6 @@ server:
     key-password: lizhipeng
     key-store-type: JKS
     key-alias: tomcat
+logging:
+  level:
+    root: debug
